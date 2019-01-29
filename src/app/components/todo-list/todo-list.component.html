@@ -1,0 +1,17 @@
+<div class="container">
+  <h1 class="text-center text-warning">
+     {{ titleComponent | titlecase }}
+    </h1>
+    <div class="row mx-auto">
+      <div class="col">
+        <app-todo-input (nuevoTodo)="nuevoTodo($event)"></app-todo-input>
+      </div>
+      <div class="col">
+          <ul class="list-group">
+              
+              <app-todo-lista *ngFor="let nota of test"[texto]="nota"></app-todo-lista>
+            </ul>
+        
+      </div>
+    </div>
+ </div>

@@ -1,0 +1,4 @@
+<input type="text" class="form-control" 
+placeholder="Escribe Aqui..." 
+ #input (keyup.enter)="onEnter(input.value)"
+ [(ngModel)]="inputUsuario">
